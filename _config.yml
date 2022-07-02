@@ -23,7 +23,7 @@ email: adityaanikode@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to Aditya's website! Here you can find information about me, the projects I have worked on,
   and all other things I find cool!
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/adityaanikode.com" # the subpath of your site, e.g. /blog
 url: "me.adityaanikode.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: na
 github_username:  aaniko123
