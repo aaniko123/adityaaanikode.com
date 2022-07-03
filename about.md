@@ -9,4 +9,4 @@ title: About Me
 
 Please check out my resume below:
 
-![](/AdityaResume.md "Aditya's Resume")
+![](https://docs.google.com/document/d/1o-vQKGD-KG_c8h1GecuUMbGCWMUe1DlSt6BKuq7--TI/edit?usp=sharing "Aditya's Resume")
