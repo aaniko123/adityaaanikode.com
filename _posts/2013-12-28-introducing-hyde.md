@@ -3,6 +3,8 @@ layout: post
 title: Introducing Hyde
 ---
 
+The Rutgers Rocket Propulsion team was successfully able to launch our first two stage rocket at the Spaceport America Cup international rocketry competition. Our rocket consisted of an M2500T motor in the booster stage and a M1500 motor for the sustainer. The sensors and PLC on board the telemetry suite consisted of two Missileworks RRC3s, a Teensy 4.1 microcontroller, as well as a Telemega and a Featherweight GPS for redundancy purposes.
+
 Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
 ### Built on Poole
