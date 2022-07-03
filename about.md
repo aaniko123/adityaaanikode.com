@@ -9,4 +9,4 @@ title: About Me
 
 Please check out my resume below:
 
-![](/adityaaanikode.com/Aditya%20Anikode%E2%80%99s%20Resume.pdf "Aditya Anikode's Resume")
+![](/adityaaanikode.com/AdityaResume.png "Aditya Anikode's Resume")
