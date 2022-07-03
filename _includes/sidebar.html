@@ -2,7 +2,7 @@
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h1>
-        <a href="{{ site.url }}">
+        <a href="http://me.adityaanikode.com">
           {{ site.title }}
         </a>
       </h1>
@@ -10,14 +10,14 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.url %} active{% endif %}" href="{{ site.url }}">Home</a>
+      <a class="sidebar-nav-item{% if page.url == site.url %} active{% endif %}" href="http://me.adityaanikode.com">Home</a>
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
         `layout: page` in the front-matter. See readme for usage.
       {% endcomment %}
 
-      {% assign pages_list = site.pages %}
+      {%basesign pages_list = site.pages %}
       {% for node in pages_list %}
         {% if node.title != null %}
           {% if node.layout == "page" %}
