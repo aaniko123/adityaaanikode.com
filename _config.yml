@@ -2,9 +2,7 @@
 markdown:         redcarpet
 highlighter:      pygments
 
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
+
 
 # Setup
 title:            Aditya Anikode's Website
