@@ -1,6 +1,6 @@
 ---
 layout: page
-title: My Projects
+title: Basics of hobby rocketry
 ---
 
 <p class="message">
