@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Basics of hobby rocketry
+title: Projects!
 ---
 
 <p class="message">
   Welcome! Here are some of my personal projects, research I have done on certain topics, and details about my experiences.
 </p>
 
-Building a hobby rocket:
+**Building a hobby rocket:**
 
 This is a general tutorial on how to build your own rocket. Note that this tutorial serves as a basic guide to designigng and fabricating your rocket, however many nuances reside, such as the altitude you wish to attain, what motor you want to use, if a payload is needed, and which sensor modules you want to implement (ALTIMETER and GPS are most likely necessary to be implemented).
 
