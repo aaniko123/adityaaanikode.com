@@ -7,7 +7,21 @@ title: Projects!
   Welcome! Here are some of my personal projects, research I have done on certain topics, and details about my experiences.
 </p>
 
-**Building a hobby rocket:**
+**Design, Manufacturing, and Fabrication of a Bipedal Robot**
+
+This is a general overview on robots and how to build and configure a bipedal robot.
+
+Some key considerations:
+
+1. Motor Selection and Limitations
+2. Design of Foot Shape
+3. System Identification
+  a. Center of Mass and Inertia Matrices
+4. Programming and Control
+
+
+
+**Building a Hobby Rocket:**
 
 This is a general tutorial on how to build your own rocket. Note that this tutorial serves as a basic guide to designigng and fabricating your rocket, however many nuances reside, such as the altitude you wish to attain, what motor you want to use, if a payload is needed, and which sensor modules you want to implement (ALTIMETER and GPS are most likely necessary to be implemented).
 
