@@ -9,4 +9,8 @@ title: About Me
 
 Please check out my resume below:
 
-![](https://cdn.discordapp.com/attachments/690386859330764851/993219373869305926/AdityaResume-1.png "Aditya's Resume")
+<iframe
+  src="/Documents/Aditya_Resume.pdf"
+  style="width: 100%; height: 600px;"
+  frameborder="0">
+</iframe>
