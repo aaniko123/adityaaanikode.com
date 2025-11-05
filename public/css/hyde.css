@@ -133,6 +133,8 @@ a.sidebar-nav-item:focus {
     margin-right: 2rem;
   }
   
+  /* Wider content for posts */
+  .content .post-article,
   .content .post-content {
     max-width: 100%;
   }
@@ -142,12 +144,20 @@ a.sidebar-nav-item:focus {
   .content {
     margin-left: 22rem;
     margin-right: 4rem;
-    max-width: 50rem;
+    max-width: 65rem;
   }
   
+  /* Even wider for posts on large screens */
+  .content .post-article,
   .content .post-content {
     max-width: 100%;
   }
+}
+
+/* Ensure posts use full available width */
+.post-article {
+  width: 100%;
+  max-width: 100%;
 }
 
 
