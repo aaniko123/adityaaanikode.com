@@ -132,12 +132,21 @@ a.sidebar-nav-item:focus {
     margin-left: 20rem;
     margin-right: 2rem;
   }
+  
+  .content .post-content {
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 64em) {
   .content {
     margin-left: 22rem;
     margin-right: 4rem;
+    max-width: 50rem;
+  }
+  
+  .content .post-content {
+    max-width: 100%;
   }
 }
 

@@ -4,8 +4,10 @@ layout: default
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
+  <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
+  <div class="post-content">
+    {{ content }}
+  </div>
 </div>
 
 <div class="related">
@@ -23,3 +25,47 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+<style>
+.post-content {
+  line-height: 1.8;
+  max-width: 100%;
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 4px;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.post-content li {
+  margin-bottom: 0.75rem;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #202020;
+}
+
+@media (min-width: 48em) {
+  .post-content {
+    max-width: 100%;
+  }
+}
+</style>
