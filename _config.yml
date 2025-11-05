@@ -22,3 +22,11 @@ version:          2.1.0
 
 github:
   repo:           https://github.com/aaniko123/adityaanikode.com
+
+# Featured posts for home page (specify post titles)
+featured_posts:
+  - "Fredrikstad"
+  - "Oslo"
+  - "Iceland"
+  - "Japan"
+  - "Colombia"

@@ -8,13 +8,16 @@ title: Home
   <div class="pane pane-posts">
     <h2 class="pane-title">Recent Adventures</h2>
     <ul class="pane-list">
-      {% for post in site.posts limit: 5 %}
-      <li class="pane-item">
-        <a href="{{ post.url }}" class="pane-link">
-          <span class="pane-link-title">{{ post.title }}</span>
-          <span class="pane-link-date">{{ post.date | date: "%b %d, %Y" }}</span>
-        </a>
-      </li>
+      {% for post_title in site.featured_posts %}
+        {% assign found_post = site.posts | where: "title", post_title | first %}
+        {% if found_post %}
+        <li class="pane-item">
+          <a href="{{ found_post.url }}" class="pane-link">
+            <span class="pane-link-title">{{ found_post.title }}</span>
+            <span class="pane-link-date">{{ found_post.date | date: "%b %d, %Y" }}</span>
+          </a>
+        </li>
+        {% endif %}
       {% endfor %}
     </ul>
     <a href="/Adventures" class="pane-more">View All Adventures →</a>
