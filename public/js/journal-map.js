@@ -127,7 +127,12 @@
       const name = document.createElement('span');
       const total = document.createElement('span');
       name.textContent = countryName(code);
-      total.textContent = `${count} ${count === 1 ? 'place' : 'places'} ↗`;
+      total.textContent = `${count} ${count === 1 ? 'place' : 'places'}`;
+      const arrow = document.createElement('span');
+      arrow.className = 'link-arrow';
+      arrow.setAttribute('aria-hidden', 'true');
+      arrow.textContent = ' ↗';
+      total.append(arrow);
       button.append(name, total);
       button.addEventListener('click', event => chooseCountry(code, event.detail === 0));
       destinations.append(button);

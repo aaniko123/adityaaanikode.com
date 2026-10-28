@@ -38,7 +38,7 @@ journal_map: true
 {% assign entry_country = mapped.country_name | default: 'Notes & reflections' %}
 {% if entry_country == country %}
 {% assign entry_count = entry_count | plus: 1 %}
-<a class="entry-row" href="{{ post.url | relative_url }}" data-entry="{{ post.title | downcase | escape }} {{ entry_country | downcase | escape }} {{ mapped.country | downcase | escape }}{% for place in mapped.places %} {{ place.name | downcase | escape }}{% endfor %}"><span class="entry-number">{% if entry_count < 10 %}0{% endif %}{{ entry_count }}</span><h3>{{ post.title }}</h3><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %Y' }}</time><span aria-hidden="true">↗</span></a>
+<a class="entry-row" href="{{ post.url | relative_url }}" data-entry="{{ post.title | downcase | escape }} {{ entry_country | downcase | escape }} {{ mapped.country | downcase | escape }}{% for place in mapped.places %} {{ place.name | downcase | escape }}{% endfor %}"><span class="entry-number">{% if entry_count < 10 %}0{% endif %}{{ entry_count }}</span><h3>{{ post.title }}</h3><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %Y' }}</time><span aria-hidden="true" class="link-arrow">↗</span></a>
 {% endif %}
 {% endfor %}
 {% endcapture %}

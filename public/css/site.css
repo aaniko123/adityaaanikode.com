@@ -275,3 +275,14 @@ body { background-image: radial-gradient(ellipse at 8% 0%, #dfdac42b, transparen
   .journal-country-heading { padding: 14px 16px; }
   .journal-country-heading h2 { font-size: 28px; }
 }
+
+/* Decorative link arrows are reserved for the desktop layout. */
+@media (max-width: 750px) {
+  .link-arrow { display: none !important; }
+  .entry-row { grid-template-columns: 45px 1fr 100px; }
+  .text-link, .header-contact, .button { gap: 0; }
+  .contact-strip > a { padding-right: 0; }
+}
+@media (max-width: 600px) {
+  .entry-row { grid-template-columns: 25px 1fr 65px; }
+}

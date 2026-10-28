@@ -10,7 +10,7 @@ I love understanding how things work, then finding ways to make them work a litt
 
 Away from building, I’m usually exploring somewhere new with a camera. This site is a home for both sides of that curiosity: the things I make and the places that stay with me.
 
-<div class="about-actions"><a class="button" href="{{ '/Documents/Aditya_Resume.pdf' | relative_url }}">View my résumé <span aria-hidden="true">↗</span></a><a class="text-link" href="mailto:adityaanikode@gmail.com">Get in touch ↗</a></div>
+<div class="about-actions"><a class="button" href="{{ '/Documents/Aditya_Resume.pdf' | relative_url }}">View my résumé <span aria-hidden="true" class="link-arrow">↗</span></a><a class="text-link" href="mailto:adityaanikode@gmail.com">Get in touch <span class="link-arrow" aria-hidden="true">↗</span></a></div>
 
 ## A few things I’m drawn to
 
