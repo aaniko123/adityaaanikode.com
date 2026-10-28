@@ -27,10 +27,27 @@ journal_map: true
 </script>
 
 <div class="journal-toolbar"><span>{{ site.posts | size }} entries & counting</span><label for="journal-search">Find an entry <input id="journal-search" type="search" placeholder="Search the journal…" autocomplete="off"></label></div>
-<div class="entry-list">
+{% assign country_names = site.data.journal_locations | map: 'country_name' | uniq | sort %}
+{% assign group_names = country_names | join: '|' | append: '|Notes & reflections' | split: '|' %}
+<div class="journal-groups">
+{% for country in group_names %}
+{% assign entry_count = 0 %}
+{% capture country_entries %}
 {% for post in site.posts %}
 {% assign mapped = site.data.journal_locations | where: 'post', post.path | first %}
-<a class="entry-row" href="{{ post.url | relative_url }}" data-entry="{{ post.title | downcase | escape }} {{ mapped.country_name | downcase | escape }} {{ mapped.country | downcase | escape }}{% for place in mapped.places %} {{ place.name | downcase | escape }}{% endfor %}"><span class="entry-number">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span><h2>{{ post.title }}</h2><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %Y' }}</time><span aria-hidden="true">↗</span></a>
+{% assign entry_country = mapped.country_name | default: 'Notes & reflections' %}
+{% if entry_country == country %}
+{% assign entry_count = entry_count | plus: 1 %}
+<a class="entry-row" href="{{ post.url | relative_url }}" data-entry="{{ post.title | downcase | escape }} {{ entry_country | downcase | escape }} {{ mapped.country | downcase | escape }}{% for place in mapped.places %} {{ place.name | downcase | escape }}{% endfor %}"><span class="entry-number">{% if entry_count < 10 %}0{% endif %}{{ entry_count }}</span><h3>{{ post.title }}</h3><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %Y' }}</time><span aria-hidden="true">↗</span></a>
+{% endif %}
+{% endfor %}
+{% endcapture %}
+{% if entry_count > 0 %}
+<section class="journal-country" aria-labelledby="journal-country-{{ forloop.index }}" data-journal-group>
+  <div class="journal-country-heading"><h2 id="journal-country-{{ forloop.index }}">{{ country }}</h2><span>{{ entry_count }} {% if entry_count == 1 %}entry{% else %}entries{% endif %}</span></div>
+  <div class="entry-list">{{ country_entries }}</div>
+</section>
+{% endif %}
 {% endfor %}
 </div>
 <p id="no-entries" role="status" hidden>No entries found. Try another place or topic.</p>

@@ -2,12 +2,16 @@ const search = document.querySelector('#journal-search');
 if (search) {
   const entries = [...document.querySelectorAll('[data-entry]')];
   const empty = document.querySelector('#no-entries');
+  const groups = [...document.querySelectorAll('[data-journal-group]')];
   search.addEventListener('input', () => {
     const query = search.value.trim().toLocaleLowerCase();
     let visible = 0;
     entries.forEach(entry => {
       entry.hidden = !entry.dataset.entry.includes(query);
       if (!entry.hidden) visible++;
+    });
+    groups.forEach(group => {
+      group.hidden = ![...group.querySelectorAll('[data-entry]')].some(entry => !entry.hidden);
     });
     empty.hidden = visible > 0;
   });
