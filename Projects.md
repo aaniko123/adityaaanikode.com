@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Projects!
+title: Things I’ve built
+eyebrow: Engineering & experimentation
+description: From an idea on paper to something out in the world.
 ---
 
-<p class="message">
-  Welcome! Here are some of my personal projects, research I have done on certain topics, and details about my experiences.
-</p>
+<nav class="project-index" aria-label="Project index"><a href="#bipedal-robot">01 Robotics ↓</a><a href="#hobby-rocket">02 Rocketry ↓</a><a href="#zero-gravity-drone">03 Drones ↓</a></nav>
 
-**Design, Manufacturing, and Fabrication of a Bipedal Robot**
+<h2 id="bipedal-robot">01 / Bipedal robotics</h2>
 
 This is a general overview on robots and how to build and configure a bipedal robot.
 
@@ -21,9 +21,9 @@ Some key considerations:
 
 
 
-**Building a Hobby Rocket:**
+<h2 id="hobby-rocket">02 / Building a hobby rocket</h2>
 
-This is a general tutorial on how to build your own rocket. Note that this tutorial serves as a basic guide to designigng and fabricating your rocket, however many nuances reside, such as the altitude you wish to attain, what motor you want to use, if a payload is needed, and which sensor modules you want to implement (ALTIMETER and GPS are most likely necessary to be implemented).
+This is a general tutorial on how to build your own rocket. Note that this tutorial serves as a basic guide to designing and fabricating your rocket, however many nuances reside, such as the altitude you wish to attain, what motor you want to use, if a payload is needed, and which sensor modules you want to implement (ALTIMETER and GPS are most likely necessary to be implemented).
 
 ![](https://cdn.discordapp.com/attachments/690386859330764851/993361846461542490/unknown.png "Spaceport America Rocket Poster")
 
@@ -41,13 +41,13 @@ Sensors used:
 
 - Raspberry Pi 4 for data and video logging and transmission
 - ESP32 to control pressure, temperature, acceleration, and GPS sensors
-- Digi-key Transciever
+- Digi-key Transceiver
 - Pi-cam v2 (mid flight capture)
 
-The multiple sensor readings were then unified into one cohesive and integrated python GUI which would be observed from the ground station throughout the duration of the launch.
+The multiple sensor readings were then unified into one cohesive and integrated Python GUI which would be observed from the ground station throughout the duration of the launch.
 
 
-**Building a Drone:**
+<h2 id="zero-gravity-drone">03 / A zero-gravity drone</h2>
 
 For my undergraduate senior design project, I had been tasked with building a drone that could perform what is known as a "Zero-gravity maneuver". By quickly transitioning from a period of upward acceleration to freefall, a sensation of weightlessness is experienced by the system. A general overview of the project can be seen below in the poster.
 

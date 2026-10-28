@@ -1,21 +1,21 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+markdown:         kramdown
+highlighter:      rouge
 
 # removed permalink (cant be in folder)
 
 # Setup
-title:            Aditya Anikode's Website
-tagline:          'My very own website'
-description:      'Welcome to my website! Please feel free to view some of the projects I have done, take look at my portfolio, and check out all the things I find cool!'
-url:              http://me.adityaanikode.com
-baseurl:          /
+title:            Aditya Anikode
+tagline:          'Engineer & Explorer'
+description:      'Engineering projects, travel journals, and photography by Aditya Anikode. Always curious. Always building.'
+url:              https://me.adityaanikode.com
+baseurl:          ''
 
 author:
-  name:           'My email: '
-  url:            adityaanikode@gmail.com
+  name:           'Aditya Anikode'
+  email:          adityaanikode@gmail.com
+  url:            https://me.adityaanikode.com
 
-paginate:         5
 
 # Custom vars
 version:          2.1.0
@@ -30,3 +30,9 @@ featured_posts:
   - "Iceland"
   - "Japan"
   - "Colombia"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

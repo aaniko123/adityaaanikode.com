@@ -1,8 +1,16 @@
 ---
 layout: default
 ---
-
-<div class="page">
-  <h1 class="page-title">{{ page.title }}</h1>
-  {{ content }}
-</div>
+<article class="page{% if page.wide %} page-wide{% endif %}">
+  <header class="page-header{% if page.photography_handle %} photography-header{% endif %}">
+    {% if page.photography_handle %}<div class="photography-heading">{% endif %}
+    <span class="eyebrow">{{ page.eyebrow | default: 'A little of my world' }}</span>
+    <h1>{{ page.title }}<span class="brand-dot">.</span></h1>
+    {% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}
+    {% if page.photography_handle %}
+    </div>
+    <span class="photography-handle">{{ page.photography_handle }}</span>
+    {% endif %}
+  </header>
+  <div class="page-content">{{ content }}</div>
+</article>

@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
   {% include head.html %}
-
   <body>
-
+    <a class="skip-link" href="#main">Skip to content</a>
     {% include sidebar.html %}
-
-    <div class="content container">
-      {{ content }}
-    </div>
-
+    <main id="main" class="shell" tabindex="-1">{{ content }}</main>
+    <footer class="site-footer shell">
+      <div><a class="footer-name" href="{{ '/' | relative_url }}">Aditya Anikode<span class="brand-dot">.</span></a><p>Always curious. Always building.</p></div>
+      <div class="footer-links"><a href="mailto:adityaanikode@gmail.com">Email ↗</a><a href="https://github.com/aaniko123">GitHub ↗</a><a href="{{ '/Documents/Aditya_Resume.pdf' | relative_url }}">Résumé ↗</a></div>
+      <span class="copyright">© {{ site.time | date: '%Y' }} Aditya Anikode</span>
+    </footer>
   </body>
 </html>

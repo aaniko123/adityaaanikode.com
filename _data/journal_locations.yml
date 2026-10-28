@@ -1,0 +1,101 @@
+# Coordinates identify the destinations named in each journal, not exact travel tracks.
+# To map a new entry, add its _posts filename, Natural Earth country code, and named [latitude, longitude] pairs.
+# Pins are generated only for matching entries in site.posts.
+- post: "_posts/2022-07-02-Spaceport.md"
+  country: "USA"
+  country_name: "United States"
+  places:
+    - name: "Spaceport America, New Mexico"
+      coordinates: [32.9903, -106.9697]
+- post: "_posts/2024-01-01-Puerto Rico.md"
+  country: "PRI"
+  country_name: "Puerto Rico"
+  places:
+    - name: "San Juan, Puerto Rico"
+      coordinates: [18.4655, -66.1057]
+- post: "_posts/2024-06-01-Spain.md"
+  country: "ESP"
+  country_name: "Spain"
+  places:
+    - name: "Madrid, Spain"
+      coordinates: [40.4168, -3.7038]
+    - name: "Valencia, Spain"
+      coordinates: [39.4699, -0.3763]
+    - name: "Ibiza, Spain"
+      coordinates: [38.9067, 1.4206]
+    - name: "Formentera, Spain"
+      coordinates: [38.6964, 1.4531]
+    - name: "Málaga, Spain"
+      coordinates: [36.7213, -4.4214]
+    - name: "Granada, Spain"
+      coordinates: [37.1773, -3.5986]
+    - name: "Barcelona, Spain"
+      coordinates: [41.3874, 2.1686]
+- post: "_posts/2024-08-02-Japan.md"
+  country: "JPN"
+  country_name: "Japan"
+  places:
+    - name: "Yokohama, Japan"
+      coordinates: [35.4437, 139.638]
+    - name: "Kamakura, Japan"
+      coordinates: [35.3192, 139.5467]
+    - name: "Tokyo, Japan"
+      coordinates: [35.6762, 139.6503]
+    - name: "Kyoto, Japan"
+      coordinates: [35.0116, 135.7681]
+- post: "_posts/2024-09-14-Colombia.md"
+  country: "COL"
+  country_name: "Colombia"
+  places:
+    - name: "Bogotá, Colombia"
+      coordinates: [4.711, -74.0721]
+    - name: "Medellín, Colombia"
+      coordinates: [6.2442, -75.5812]
+    - name: "Cartagena, Colombia"
+      coordinates: [10.391, -75.4794]
+- post: "_posts/2024-10-15-Iceland.md"
+  country: "ISL"
+  country_name: "Iceland"
+  places:
+    - name: "Reykjavík, Iceland"
+      coordinates: [64.1466, -21.9426]
+    - name: "Vík, Iceland"
+      coordinates: [63.4186, -19.006]
+    - name: "Höfn, Iceland"
+      coordinates: [64.2539, -15.2082]
+    - name: "Egilsstaðir, Iceland"
+      coordinates: [65.2669, -14.3948]
+    - name: "Akureyri, Iceland"
+      coordinates: [65.6885, -18.1262]
+    - name: "Borgarnes, Iceland"
+      coordinates: [64.5383, -21.9206]
+- post: "_posts/2024-12-25-UAE.md"
+  country: "ARE"
+  country_name: "United Arab Emirates"
+  places:
+    - name: "Dubai, UAE"
+      coordinates: [25.2048, 55.2708]
+    - name: "Abu Dhabi, UAE"
+      coordinates: [24.4539, 54.3773]
+- post: "_posts/2024-12-28-Kerela.md"
+  country: "IND"
+  country_name: "India"
+  places:
+    - name: "Palakkad, Kerala"
+      coordinates: [10.7867, 76.6548]
+    - name: "Munnar, Kerala"
+      coordinates: [10.0889, 77.0595]
+    - name: "Kochi, Kerala"
+      coordinates: [9.9312, 76.2673]
+- post: "_posts/2025-05-23-Agra.md"
+  country: "IND"
+  country_name: "India"
+  places:
+    - name: "Agra, India"
+      coordinates: [27.1767, 78.0081]
+- post: "_posts/2025-05-25-Kedarnath.md"
+  country: "IND"
+  country_name: "India"
+  places:
+    - name: "Kedarnath, India"
+      coordinates: [30.7346, 79.0669]
